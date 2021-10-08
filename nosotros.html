@@ -20,7 +20,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#7952b3">
-	<title>Inicio - Restaurante</title>
+	<title>Nosotros - Restaurante</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 	<link href="css/style.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 <body>
 	<!-- HEADER -->
 	<header>
-		<nav id="main" class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #636363">
+		<nav id="main" class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #0d6efd">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="./index.html">Food World</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -64,200 +64,120 @@
 
 	<!-- FIN HEADER -->
 
-	<main class="main">
-
-		<aside id="izq">
-
-			<img src="imagenes/restaurante.jpg" alt="">
-
-		</aside>
-		<aside id="der">
-			<h1> nuestra historia</h1>
-			<p>Un día Albert citó a su amigo Javier para comentarle que quería abrir un restaurante, una de esas
-				asignaturas pendientes. Para ello necesitaba un socio en el que confiase ciegamente y allí en un sofá de
-				su casa, cerveza en mano, se empezó a forjar la idea. No tardaron en empezar a hablar de una de sus
-				pasiones, la hamburguesa, e hicieron un recorrido por las mejores hamburgueserías de Chicago, NY,
-				Londres, Berlín… y llegaron a una conclusión: no hay hamburgueserías que traten su producto desde un
-				punto de vista estrictamente gourmet.</p>
-
-
-		</aside>
-
-
-		<section class="team">
-			<div class="contenedor">
-				<h1>Nuestro Equipo</h1>
-				<h4>CHEF</h4>
-				<div class="team__grid">
-
-					<article class="team__columna">
-						<img src="imagenes/persona1.jpg" alt="">
-
-
-
-					</article>
-					<H4>GERENTE GENERAL</H4>
-					<article class="team__columna">
-
-						<img src="imagenes/persona2.jpg" alt="">
-					</article>
-
-					<article class="team__columna">
-						<H4>MESERA</H4>
-						<img src="imagenes/persona4.jpg" alt="">
-
-					</article>
-
+	<!--Iconos de Redes Sociales -->
+	<div class="container-fluid mt-5 d-flex justify-content-end position-fixed" id="redesSociales">
+		<div class="btn-group-vertical" style="width: 55px;" >
+			<a class="btn btn-warning p-3" href="https://www.facebook.com" target="_blank" role="button" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover" data-bs-content="Facebook"><i class="fab fa-facebook"></i></a>
+			<a class="btn btn-warning p-3" href="https://www.instagram.com" target="_blank" role="button" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover" data-bs-content="Instagram"><i class="fab fa-instagram"></i></a>
+			<a class="btn btn-warning p-3" href="https://www.twitter.com" target="_blank" role="button" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover" data-bs-content="Twiter"><i class="fab fa-twitter"></i></a>
+			<a class="btn btn-warning p-3" href="https://www.youtube.com" target="_blank" role="button" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover" data-bs-content="Youtube"><i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+	
+	<!--Seccion historia-->
+	<section id="historia">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 mt-5">
+					<img class="img-fluid img-thumbnail" src="img/foto4@2x.png" alt="">
 				</div>
-
+				<div class="col-sm12 col-md-6 text-center mt-5">
+					<img src="img/nuestrahistoria.png" alt="" class="img-fluid img-historia">
+					<p class="mt-3 ">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aut neque harum eum autem obcaecati tenetur unde enim fugiat commodi. 
+						<br><br>                    
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit vel sint nemo consectetur incidunt! Quidem porro nam velit rerum distinctio! Nobis at explicabo odio ea, aperiam, quos rerum maxime illum ab, consequatur numquam? Eos officiis tenetur perferendis maiores qui.
+						<br><br>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti assumenda ullam eveniet odio voluptatibus ipsa. Labore nemo tenetur voluptates eos exercitationem repudiandae ipsa a quo.
+						<br><br>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat qui delectus quae repudiandae accusamus minus voluptate error. Hic, ipsa illum, veniam perferendis cupiditate sed vitae magnam earum corporis maiores deserunt fugit possimus ad natus? Nihil consequatur suscipit vel qui quia assumenda officia natus ratione nostrum, laboriosam, sed, incidunt voluptatibus.
+					</p>
+				</div>
 			</div>
-
-
-
-			<section class="testimonios">
-				<div class="testimonios__header">
-					<span>Comentarios</span>
-					<h1>Clientes dicen</h1>
+		</div>
+	</section>
+	
+	<!--Seccion empleados-->
+	<section id="empleados" class="bg-light text-center">
+		<div class="container py-5 ">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 mt-5">
+					<img class="img-fluid img-thumbnail rounded-circle" src="img/personal1@2x.png" alt="">
+					<p><strong>Juan Manuel Gomez B.</strong></p>
+					<hr>
+					<cite>Chef Ejecutivo</cite>
 				</div>
-				<!--testimonios-box-contenedor------>
-				<div class="testimonios__contenedor">
-					<!--BOX-1-------------->
-					<div class="testimonios__caja">
-						<!--top------------------------->
-						<div class="caja-top">
-							<!--profile----->
-							<div class="perfil">
-								<!--img---->
-								<div class="perfil-img">
-									<img src="imagenes/c-1.jpg" />
-								</div>
-								<!--name-and-username-->
-								<div class="name-user">
-									<strong>Amando Perez</strong>
-									<span>@Perezdo</span>
-								</div>
-							</div>
-							<!--reseñas------>
-							<div class="reseñas">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="far fa-star"></i>
-								<!--Estrella Vacia-->
-							</div>
-						</div>
-						<!--Comentarios---------------------------------------->
-						<div class="clientes__comentarios">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis?
-								Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum
-								aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-						</div>
-					</div>
-					<!--BOX-2-------------->
-					<div class="testimonios__caja">
-						<!--top------------------------->
-						<div class="caja-top">
-							<!--profile----->
-							<div class="perfil">
-								<!--img---->
-								<div class="perfil-img">
-									<img src="imagenes/c-2.jpg" />
-								</div>
-								<!--name-and-username-->
-								<div class="name-user">
-									<strong>Sofia Lopez</strong>
-									<span>@SofiLo</span>
-								</div>
-							</div>
-							<!--reseñas------>
-							<div class="reseñas">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<!--Estrella vacia-->
-							</div>
-						</div>
-						<!--comentarios---------------------------------------->
-						<div class="clientes__comentarios">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis?
-								Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum
-								aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-						</div>
-					</div>
-					<!--BOX-3-------------->
-					<div class="testimonios__caja">
-						<!--top------------------------->
-						<div class="caja-top">
-							<!--perfil----->
-							<div class="perfil">
-								<!--img---->
-								<div class="perfil-img">
-									<img src="imagenes/c-3.jpg" />
-								</div>
-								<!--name-and-username-->
-								<div class="name-user">
-									<strong>Nicole Arma</strong>
-									<span>@NoArma</span>
-								</div>
-							</div>
-							<!--reseñas------>
-							<div class="reseñas">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="far fa-star"></i>
-								<!--Estrella vacia-->
-							</div>
-						</div>
-						<!--Comentarios---------------------------------------->
-						<div class="clientes__comentarios">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis?
-								Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum
-								aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-						</div>
-					</div>
-					<!--BOX-4-------------->
-					<div class="testimonios__caja">
-						<!--top------------------------->
-						<div class="caja-top">
-							<!--perfil----->
-							<div class="perfil">
-								<!--img---->
-								<div class="perfil-img">
-									<img src="imagenes/c-4.jpg" />
-								</div>
-								<!--name-and-username-->
-								<div class="name-user">
-									<strong>Oliva Silva</strong>
-									<span>@Oliva</span>
-								</div>
-							</div>
-							<!--reseñas------>
-							<div class="reseñas">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="far fa-star"></i>
-								<!--Estrella vacia-->
-							</div>
-						</div>
-						<!--Comments---------------------------------------->
-						<div class="clientes__comentarios">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis?
-								Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum
-								aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-						</div>
-					</div>
+				<div class="col-sm-6 col-md-4 mt-5">
+					<img class="img-fluid img-thumbnail rounded-circle" src="img/personal2@2x.png" alt="">
+					<p><strong>Ana Isabel Casallas B.</strong></p>
+					<hr>
+					<cite>Chef Pastelera</cite>
 				</div>
-			</section>
+				<div class="col-sm-6 col-md-4 mt-5">
+					<img class="img-fluid img-thumbnail rounded-circle" src="img/personal3@2x.png" alt="">
+					<p><strong>Maria Paulina Veloza G.</strong></p>
+					<hr>
+					<cite>Administradora</cite>
+				</div>
+				<div class="col-sm-6 col-md-4 mt-5">
+					<img class="img-fluid img-thumbnail rounded-circle" src="img/personal4@2x.png" alt="">
+					<p><strong>Nombre Apellido</strong></p>
+					<hr>
+					<cite>Cargo</cite>
+				</div>
+				<div class="col-sm-6 col-md-4 mt-5">
+					<img class="img-fluid img-thumbnail rounded-circle" src="img/personal5@2x.png" alt="">
+					<p><strong>Nombre Apellido</strong></p>
+					<hr>
+					<cite>Cargo</cite>
+				</div>
+				<div class="col-sm-6 col-md-4 mt-5">
+					<img class="img-fluid img-thumbnail rounded-circle" src="img/personal6@2x.png" alt="">
+					<p><strong>Nombre Apellido</strong></p>
+					<hr>
+					<cite>Cargo</cite>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Seccion testimonios-->
+	<section id="testimonios">
+		<div class="container-fluid text-center bg-transparent mt-5">
+			<h1 class="mt-5">Testimonios</h1>
+			<div class="row">
+				<div class="col-sm-12 m-auto">
+					<div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="row py-5">
+									<div class="col-sm-12 col-md-4">
+										<img class="img-fluid img-thumbnail rounded-circle" src="img/testimonio1@2x.png" alt="">
+									</div>
+									<div class="col-sm-12 col-md-7 mt-3">
+										<p><i class="fas fa-quote-left text-dark" style="font-size: 30px"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. In delectus minima quas reprehenderit error, voluptates sapiente assumenda odio eos, fuga, quidem atque animi? Quam laudantium ipsum dolores vel asperiores itaque rerum adipisci officiis, doloribus, earum magni voluptatum, dolorem esse sint. <i class="fas fa-quote-right text-dark" style="font-size: 30px"></i></p>
+										<cite>Nombre Apellido</cite>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+							<i class="fas fa-arrow-left text-dark" style="font-size: 60px"></i>
+							<span class="visually-hidden">Previous</span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+							<i class="fas fa-arrow-right text-dark" style="font-size: 60px"></i>
+							<span class="visually-hidden">Next</span>
+						  </button>
+					</div>
+				</div>                    
+			</div>
+		</div>
+	</section>
+
 
 			<!--FOOTER-->
-			<footer class="text-center text-lg-start text-muted" style="background-color: #310101">
+			<footer class="text-center text-lg-start text-muted" style="background-color: #b5dae3">
 				<!--  #0d6efd -->
 				<section class="">
 					<div class="container text-center text-md-start mt-5">
