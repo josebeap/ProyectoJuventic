@@ -1,0 +1,456 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  </head>
+  <header>
+    <nav id="main" class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #636363">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Food World</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactanos.html">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- FIN HEADER -->
+  <body class="bg-light">
+      <div class="container">
+        <h1>Food World</h1>
+        <br>
+        
+        <div class="table-responsive">
+            <table class="table table-hover">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Añadir/Restar</th>
+                <th scope="col">Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+              <tr id="footer">
+                <th scope="row" colspan="5">Empiece añadir platillos!</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="row py-md-auto text-center">
+          <div class="col-lg-6 col-md-8 mx-auto">
+              <button id="confirmar-compra" type="button" class="btn btn-primary" data-toggle="modal" data-target="#compraModal">Comprar</button>         
+          </div>
+        </div>
+        <br>
+        <!-- <div class="row" id="cards">-->
+        </div> 
+      </div> <!-- otro container --->
+
+
+      <div class="container">
+       <div id="carousel" class="carousel slide" data-interval="false">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col">
+                      
+                      <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g1.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto">
+                            <h5 class="card-title">Pie Floater</h5>
+                            <p class="card-text">$ <span>15000</span></p>
+                            <button type="button" class="btn btn-dark btn-sm text-center"data-id="1">Añadir al Carrito</button>
+                          </div>
+                        </div>
+                      <br>
+                      <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g9.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto"> <!-- style="background-color: #00AA9E;" -->
+                            <h5 class="card-title">Cangrejo al Chili</h5>
+                            <p class="card-text">
+                            $ <span>15000</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="2">Añadir al Carrito</button> 
+                          </div>
+                        </div>
+                     
+                  </div>
+                  <div class="col">
+                      <div class="card card-small shadow-sm col-md-10">
+                            <img src="images/g8.jpg" class="card-img-top" alt="Image">
+                            <div class="card-body mx-auto">
+                              <h5 class="card-title">Zurek</h5>
+                              <p class="card-text">$ <span>14000</span>
+                              </p>
+                              <button type="button" class="btn btn-dark btn-sm" data-id="3">Añadir al Carrito</button> 
+                            </div>
+                          </div>
+                      
+                      <br>
+                     
+                        <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g12.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto">
+                            <h5 class="card-title">Caldo Verde</h5>
+                            <p class="card-text">
+                            $ <span>25000</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="4">Añadir al Carrito</button> 
+                          </div>
+                        </div>
+                      
+                  </div>
+                  <div class="col">
+                     <div class="card card-small shadow-sm col-md-10">
+                            <img src="images/g11.jpg" class="card-img-top" alt="Image">
+                            <div class="card-body mx-auto">
+                              <h5 class="card-title">Borsch</h5>
+                              <p class="card-text">$ <span>17000</span>
+                              </p>
+                              <button type="button" class="btn btn-dark btn-sm" data-id="5">Añadir al Carrito</button> 
+                            </div>
+                          </div>
+                      
+                      <br>
+                     
+                        <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g16.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto">
+                            <h5 class="card-title">Soupe à l'oignon</h5>
+                            <p class="card-text">
+                            $ <span>13000</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="6">Añadir al Carrito</button> 
+                          </div>
+                        </div>  
+
+                  </div>
+                  <div class="col">
+                      <div class="card card-small shadow-sm col-md-10">
+                            <img src="images/g15.jpg" class="card-img-top" alt="Image">
+                            <div class="card-body mx-auto">
+                              <h5 class="card-title">Ajiaco</h5>
+                              <p class="card-text">$ <span>10000</span>
+                              </p>
+                              <button type="button" class="btn btn-dark btn-sm" data-id="7">Añadir al Carrito</button> 
+                            </div>
+                          </div>
+                      
+                      <br>
+                     
+                        <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g14.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto">
+                            <h5 class="card-title">Mote de Queso</h5>
+                            <p class="card-text">
+                            $ <span>11000</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="8">Añadir al Carrito</button> 
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col">
+                      <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g10.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto">
+                            <h5 class="card-title">Moules Frites</h5>
+                            <p class="card-text">
+                            $ <span>17000</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="9">Añadir al Carrito</button> 
+                          </div>
+                        </div>
+                      <br>
+                      <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g7.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto"> <!-- style="background-color: #00AA9E;" -->
+                            <h5 class="card-title">Moros y Cristianos</h5>
+                            <p class="card-text">
+                            $ <span>18500</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="10">Añadir al Carrito</button> 
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col">
+                      <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g4.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto">
+                            <h5 class="card-title">Kabsa</h5>
+                            <p class="card-text">
+                            $ <span>20000</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="11">Añadir al Carrito</button> 
+                          </div>
+                        </div>
+                      <br>
+                      <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g3.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto"> <!-- style="background-color: #00AA9E;" -->
+                            <h5 class="card-title">Nasi Campur</h5>
+                            <p class="card-text">
+                            $ <span>22000</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="12">Añadir al Carrito</button> 
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col">
+                      <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g6.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto">
+                            <h5 class="card-title">Goi Cuon</h5>
+                            <p class="card-text">
+                            $ <span>16600</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="13">Añadir al Carrito</button> 
+                          </div>
+                        </div>
+                      <br>
+                      <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g5.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto"> <!-- style="background-color: #00AA9E;" -->
+                            <h5 class="card-title">Papa a la Huancaína</h5>
+                            <p class="card-text">
+                            $ <span>17800</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="14">Añadir al Carrito</button> 
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g13.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto">
+                            <h5 class="card-title">Buey Wellington</h5>
+                            <p class="card-text">
+                            $ <span>22300</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="15">Añadir al Carrito</button> 
+                          </div>
+                        </div>
+                      <br>
+                      <div class="card card-small shadow-sm col-md-10">
+                          <img src="images/g2.jpg" class="card-img-top" alt="Image">
+                          <div class="card-body mx-auto"> <!-- style="background-color: #00AA9E;" -->
+                            <h5 class="card-title">Øllebrød</h5>
+                            <p class="card-text">
+                            $ <span>23000</span>
+                            </p>
+                            <button type="button" class="btn btn-dark btn-sm" data-id="16">Añadir al Carrito</button>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        <div class="row py-md-4 text-center">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                  <a class="btn btn-primary btn-sm" data-bs-target="#carousel" role="button" data-bs-slide="prev"> 
+                    <span aria-hidden="true"><</span> 
+                  </a>
+                  <a class="btn btn-primary btn-sm" data-bs-target="#carousel" role="button" data-bs-slide="next"> 
+                    <span aria-hidden="true">></span>
+                  </a>      
+              </div>
+        </div>
+    </div>    
+   <!-- <button type="button" onclick="sendEmailPrueba()" class="btn btn-primary">Enviar</button>-->
+
+      <!---modal-->
+        <div class="modal fade" id="compraModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:#00b9c7;">Gracias por tu pedido!</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <p>Hola! Gracias por confiar en nosotros, aquí tienes los datos de tu pedido.</p>
+                      <img id = "imagen_correo" src="img/lm.png" class="rounded mx-auto d-block" alt="Image">  
+                      <h5 class="modal-title">Este es tu pedido</h5>
+                      <hr size=5 style="color:#00b9c7;">
+                      <p id="p1" class="text-center"><p>
+                      <p id="p2" class="fw-bold text-center"><p>
+                     
+                     <form onsubmit="sendEmail()">
+                        <br>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Nombre:</label>
+                          <input type="text" class="form-control" id="recipient-name" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Correo:</label>
+                          <input type="email" class="form-control" id="recipient-correo" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                     </form>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Añadir más Platillos</button>
+                     <!-- <button type="button" onclick="sendEmail()" class="btn btn-primary">Enviar</button>-->
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <template id="template-footer">
+          <th scope="row" colspan="2">Total productos</th>
+          <th></th>
+          <td>10</td>
+          <td></td>
+          <td class="font-weight-bold">$ <span>5000</span></td>
+          <td>
+              <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                  Vaciar
+              </button>
+          </td>
+        </template>
+      
+        <template id="template-carrito">
+          <tr>
+            <th scope="row">id</th>
+            <td>Café</td>
+            <td></td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    -
+                </button>
+            </td>
+            <td></td>
+            <td>
+               <button class="btn btn-outline-danger btn-sm" id="quitItem">X</button>
+            </td>
+          </tr>
+        </template>
+
+
+        <template id="template-card">
+            <div class="col-12 mb-2 col-md-4">
+              <div class="card">
+                <img src="" alt="" class="card-img-top">
+                <div class="card-body">
+                  <h5>Nombre</h5>
+                  <p>Precio</p>
+                  <button class="btn btn-dark">Añadir al Carrito</button>
+                </div>
+              </div>
+            </div>
+        </template>
+
+        <script src="js/appJS.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+  </body>
+
+   <!--FOOTER-->
+  <footer class="text-center text-lg-start text-muted" style="background-color: #310101">
+    <!--  #0d6efd -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row align-items-center">
+          <div class="col-md-4  mx-auto mb-md-0 mb-4">
+            <img src="./img/logo@2x.png"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="200"
+              height="200" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+          </div>
+          <div class="col-md-4  mx-auto mb-md-0 mb-4">
+            <div class="row align-items-center">
+              <div class="col-md-4  mx-auto mb-md-0 mb-4">
+                <a href="./mapa_sitio.html" class="text-white">
+                  MAPA
+                </a>
+              </div>
+              <div class="col-md-4  mx-auto mb-md-0 mb-4">
+                <a href="./contactanos.html" class="text-white">
+                  CONTÁCTANOS
+                </a>
+              </div>
+              <div class="col-md-4  mx-auto mb-md-0 mb-4">
+                <a href="./servicios.html" class="text-white">
+                  RESERVAS
+                </a>
+              </div>
+            </div>
+            <div class="row align-items-center " style="text-align: center;">
+              <p class="text-white">Desarrolladores<br>
+                Jose Luis Beltran Aponte<br>
+                Jhonatan Llanos Reyes<br>
+                Milton Andres Navarro Orozco<br>
+                Miguel Ángel Foliaco Gomez</p>
+            </div>
+          </div>
+          <div class="col-md-4  mx-auto mb-md-0 mb-4" style="text-align: center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63587.44873425483!2d-75.5186627813441!3d5.068782055284819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e476ffa6a42ce3b%3A0xa863cf6423ea141c!2sManizales%2C%20Caldas!5e0!3m2!1ses!2sco!4v1631416979162!5m2!1ses!2sco"
+              frameborder="0" style="border:0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container p-4">
+      <div class="row align-items-center">
+        <div class="col-md-4  mx-auto mb-md-0 mb-4 text-white"> © 2021 Copyright: JuvenTic</div>
+        <div class="col-md-4  mx-auto mb-md-0 mb-4 text-white">
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </html>
+

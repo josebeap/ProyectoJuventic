@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7952b3">
+  <title>Inicio - Restaurante</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Iconos de Font Awesome-->
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav id="main" class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #636363">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Food World</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active" href="./menu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactanos.html">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- FIN HEADER -->
+
+  <main>
+    <section class="py-5 bg-light text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Menú</h1>
+          <p class="lead text-muted text-center" align="justify">En esta sección encontrará los platos que ofrecemos en
+            nuestro restaurante y con información detallada sobre su origen e ingredientes. Si desea hacer un pedido o
+            recibir más información sobre un plato se puede contactar con nosotros y con gusto atenderemos su solicitud.
+          </p>
+          <p>
+            <a href="./pdf/prueba.pdf" class="btn btn-primary my-2" download="prueba.pdf">Descargar Menú</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- galería de fotos -->
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/13.jpg" class="img-fluid" alt="Image">
+              <div class="card-body">
+                <h5 class="card-title">Soupe à l'oignon</h5>
+                <p class="card-text">La sopa de cebolla es una sopa cuyo principal ingrediente es la cebolla
+                  caramelizada.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#modalSheet1">Más detalles</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/14.jpg" class="img-fluid" alt="Image">
+              <div class="card-body">
+                <h5 class="card-title">Ajiaco</h5>
+                <p class="card-text">El nombre del plato que identifica la gastronomía colombiana en el mundo proviene
+                  de una leyenda indígena.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#modalSheet2">Más detalles</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/15.jpg" class="img-fluid" alt="Image">
+              <div class="card-body">
+                <h5 class="card-title">Mote de queso</h5>
+                <p class="card-text">Una sopa tipica de la costa colombiana y considerada por algunos como sopa de
+                  verduras</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#modalSheet3">Más detalles</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/16.jpg" class="img-fluid" alt="Image">
+              <div class="card-body">
+                <h5 class="card-title">Buey Wellington </h5>
+                <p class="card-text">Una receta deliciosa de la cocina más clásica. Un plato que vendría bien en comidas
+                  y cenas elegantes </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#modalSheet4">Más detalles</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- aqui termina galería de fotos-->
+
+    <!-- ventanas modales -->
+    <div class="modal fade" id="modalSheet1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-6 shadow">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title">Soupe à l'oignon</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-0">
+            <div class="modal-body py-3"><img src="images/13_13.jpg" class="rounded mx-auto d-block" width="304"
+                height="236" /></div>
+            <p align="justify">
+              Considerada originaria de Francia, país donde se popularizó y que extendió su receta por el mundo en el
+              siglo XIX, es una receta de la que se tienen registros históricos desde la Edad Media en muchos países
+              europeos.
+              Para la preparación del plato se corta abundante cebolla en forma de brunoise o juliana que se sofríe en
+              mantequilla o cualquier aceite vegetal. Algunas recetas añaden harina para espesar ligeramente con un
+              roux, y vino blanco, jerez o brandy a voluntad. Todo ello se hierve posteriormente en agua o en un caldo
+              ligero de hortalizas o de carne (ternera, buey o ave).<br>
+              Se suele servir caliente en un cuenco o un tazón, con un poco de queso gruyère o emmental rallado. Se
+              puede verter la sopa sobre una rebanada de pan colocada en el fondo del tazón, a la manera de las sopas
+              medievales.
+            </p>
+          </div>
+          <div class="modal-footer flex-column border-top-0">
+            <button type="button" onclick="location.href='./contactanos.html'" class="btn btn-lg btn-primary">Contáctenos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalSheet2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-6 shadow">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title">Ajiaco</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-0">
+            <div class="modal-body py-3"><img src="images/14_14.jpg" class="rounded mx-auto d-block" width="304"
+                height="236" /></div>
+            <p align="justify">
+              El nombre del plato que identifica la gastronomía colombiana en el mundo proviene de una leyenda indígena,
+              en ella se unieron los nombres del gobernador nativo del momento, el Cacique Aco, y el de su esposa Aj. El
+              nombre compuesto donde la mujer fue primero dio origen a lo que conocemos como Ajiaco.<br>
+              El ajiaco con pollo es el único plato oriundo y nativo indígena, y el más tradicional de la gastronomía
+              colombiana, pese a que se puede preparar de diversas formas. No obstante, ha tenido influencia de la
+              gastronomía europea (pollo, alcaparras, aguacate y crema de leche), pero siempre va a conservar ese
+              sinigual sabor. El ajiaco identifica al colombiano en el planeta.<br>
+              El ajiaco tradicional está compuesto por papa sabanera, papa pastusa, para criolla, cebolla larga,
+              mazorca, pollo, ajos, arvejas y guascas pero nunca lleva arracacha, a pesar de que muchos cocineros y
+              chefs la incluyen en sus versiones.
+            </p>
+          </div>
+          <div class="modal-footer flex-column border-top-0">
+            <button type="button" onclick="location.href='./contactanos.html'" class="btn btn-lg btn-primary">Contáctenos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalSheet3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-6 shadow">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title">Mote de queso</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-0">
+            <div class="modal-body py-3"><img src="images/15_15.jpg" class="rounded mx-auto d-block" width="304"
+                height="236" /></div>
+            <p align="justify">Es una sopa típica del Caribe colombiano, originario de la Subregión Montes de María y de
+              la Sabanas del Bolívar Grande (departamentos de Córdoba y Sucre). Su principal ingrediente es el ñame,
+              preferiblemente espino o en su defecto criollo; se prepara con queso costeño duro (en cuadritos), ajo,
+              cebolla, gotas de limón, además de las hojas de bleo de chupa (arbusto de hojas aromáticas).<br>
+              Se sirve acompañado con arroz blanco, un sofrito de cebolla y ajo y suero atollabuey; opcionalmente se le
+              agregan gotas de limón en el momento de servir.<br>
+              Es considerado insignia culinaria de la Costa y plato reconocido en toda Colombia. La variante sinuana se
+              prepara con leche de coco.
+            </p>
+          </div>
+          <div class="modal-footer flex-column border-top-0">
+            <button type="button" onclick="location.href='./contactanos.html'" class="btn btn-sm btn-primary">Contáctenos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalSheet4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-6 shadow">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title">Buey Wellington </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-0">
+            <div class="modal-body py-3"><img src="images/16_16.jpg" class="rounded mx-auto d-block" width="304"
+                height="236" /> </div>
+            <p align="justify">
+              Es un platillo de origen argentino, se trata de preparar el lomo de buey cubierto con paté (a menudo paté
+              de fuagrás) y duxelle, envuelto luego en lonchas de jamón y hojaldre, y horneado. Algunas recetas incluyen
+              envolver la carne cubierta en un crêpe para retener la humedad y evitar que el hojaldre se humedezca.<br>
+              Puede envolverse y cocerse un lomo entero, que luego se corta en rodajas para servirlo, o bien puede
+              cortarse el lomo en rodajas individuales antes de envolverlas y hornearlas. Pueden añadirse muchas
+              especias para mejorar el sabor, como por ejemplo curry, pimienta de Jamaica, cualquier mezcla de especias
+              para parrilla o jengibre.
+            </p>
+          </div>
+          <div class="modal-footer flex-column border-top-0">
+            <button type="button" onclick="location.href='./contactanos.html'" class="btn btn-sm btn-primary">Contáctenos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pagination -->
+    <div class="container align-items-center">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="menu.html">1</a></li>
+              <li class="page-item active"><a class="page-link" href="menu2.html">2</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--FOOTER-->
+  <footer class="text-center text-lg-start text-muted" style="background-color: #310101">
+    <!--  #0d6efd -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row align-items-center">
+          <div class="col-md-4  mx-auto mb-md-0 mb-4">
+            <img src="./img/logo@2x.png"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="200"
+              height="200" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+          </div>
+          <div class="col-md-4  mx-auto mb-md-0 mb-4">
+            <div class="row align-items-center">
+              <div class="col-md-4  mx-auto mb-md-0 mb-4">
+                <a href="./mapa_sitio.html" class="text-white">
+                  MAPA
+                </a>
+              </div>
+              <div class="col-md-4  mx-auto mb-md-0 mb-4">
+                <a href="./contactanos.html" class="text-white">
+                  CONTÁCTANOS
+                </a>
+              </div>
+              <div class="col-md-4  mx-auto mb-md-0 mb-4">
+                <a href="./servicios.html" class="text-white">
+                  RESERVAS
+                </a>
+              </div>
+            </div>
+            <div class="row align-items-center " style="text-align: center;">
+              <p class="text-white">Desarrolladores<br>
+                Jose Luis Beltran Aponte<br>
+                Jhonatan Llanos Reyes<br>
+                Milton Andres Navarro Orozco<br>
+                Miguel Ángel Foliaco Gomez</p>
+            </div>
+          </div>
+          <div class="col-md-4  mx-auto mb-md-0 mb-4" style="text-align: center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63587.44873425483!2d-75.5186627813441!3d5.068782055284819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e476ffa6a42ce3b%3A0xa863cf6423ea141c!2sManizales%2C%20Caldas!5e0!3m2!1ses!2sco!4v1631416979162!5m2!1ses!2sco"
+              frameborder="0" style="border:0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container p-4">
+      <div class="row align-items-center">
+        <div class="col-md-4  mx-auto mb-md-0 mb-4 text-white"> © 2021 Copyright: JuvenTic</div>
+        <div class="col-md-4  mx-auto mb-md-0 mb-4 text-white">
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--FIN FOOTER-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
